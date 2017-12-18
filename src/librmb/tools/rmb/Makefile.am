@@ -22,7 +22,7 @@ rmb_SOURCES = \
 	rmb.cpp \
 	rmb.h
 
-rmb_LDADD = $(shlibs)
+rmb_LDADD = $(shlibs) 
 
 man1_MANS = rmb.man
 
