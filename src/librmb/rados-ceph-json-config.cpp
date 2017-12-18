@@ -62,6 +62,7 @@ bool RadosCephJsonConfig::to_json(librados::bufferlist *buffer) {
   s = json_dumps(root, 0);
   buffer->append(s);
   json_decref(root);
+  free(s);
   return true;
 }
 
